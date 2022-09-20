@@ -1,0 +1,100 @@
+@font-face {
+  font-family: IsidoraSans-Bold;
+  src: url(../../assets/fonts/IsidoraSans-Bold.ttf) format("truetype");
+}
+
+.top-navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #c61322;
+  font-size: 0.85rem;
+  font-weight: 300;
+
+  span {
+    font-weight: 500;
+    color: #eb8534;
+  }
+
+  &__auth-list {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: end;
+    margin: 0 5%;
+
+    a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: white;
+
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 40px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.navbar {
+  width: 100%;
+
+  border-bottom: solid 1px #eee;
+
+  &-contents {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  &__logo {
+    flex: 1;
+    color: #c61322;
+    font-family: "IsidoraSans-Bold";
+    font-size: 1.5rem;
+
+    &:hover {
+      color: #b80014;
+      cursor: pointer;
+    }
+  }
+  &__menu {
+    flex: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__links a {
+      color: #02111b;
+      margin: 0 1rem;
+      text-decoration: none;
+
+      &:hover {
+        color: #c61322;
+        cursor: pointer;
+      }
+      & i {
+        margin: 0 0.75rem;
+      }
+    }
+  }
+  &__search--searchbox {
+    flex: 1;
+    position: relative;
+
+    & i {
+      position: absolute;
+      left: 15px;
+      top: 22px;
+      color: gray;
+    }
+  }
+}

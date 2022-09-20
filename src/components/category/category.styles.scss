@@ -1,0 +1,19 @@
+.category--card {
+  width: 24%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  object-fit: cover;
+  &__innerbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+  }
+}
+
+.category--card:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}

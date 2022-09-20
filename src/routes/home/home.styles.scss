@@ -1,0 +1,14 @@
+.container {
+  margin: 0 5%;
+}
+.categories-section {
+  margin: 3rem 0;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+}

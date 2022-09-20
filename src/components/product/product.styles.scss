@@ -1,0 +1,57 @@
+.product {
+  border: solid 2px #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  width: fit-content;
+}
+input[type="button"] {
+  background-color: #c61322;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: #b80014;
+  }
+}
+.product--top-card {
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  &__sidebar {
+    text-align: center;
+    &__reviewbox {
+      padding: 1rem;
+      &--ratings {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      &--reviewers {
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.product--top-card__image img {
+  width: 120px;
+  clip: auto;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product--bottom-card {
+  &__grape {
+    font-weight: 300;
+  }
+  &__name {
+    font-weight: 700;
+  }
+  &__region {
+    font-weight: 300;
+  }
+}
